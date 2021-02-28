@@ -44,6 +44,12 @@ dependencies {
 
     // lombok
     compile 'org.projectlombok:lombok'
+
+    // redis
+    // redis - 클라이언트 연결
+    compile 'org.springframework.boot:spring-boot-starter-data-redis'
+    // embedded - redis 를 로컬에서 사용해야 할 때에
+    compile group: 'it.ozimov', name: 'embedded-redis', version: '0.7.2'
 }
 
 test {
